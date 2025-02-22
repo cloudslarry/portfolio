@@ -24,7 +24,7 @@ export async function generateMetadata() {
       siteName: `${person.firstName}'s Portfolio`,
       locale: "en_US",
       type: "website",
-    },
+      
     robots: {
       index: true,
       follow: true,
@@ -34,6 +34,13 @@ export async function generateMetadata() {
         "max-video-preview": -1,
         "max-image-preview": "large",
         "max-snippet": -1,
+       images: [
+        {
+          URL: "/images/avatar2.png", // Change to your hosted image URL
+          width: 1200,
+          height: 630,
+          alt: "Dev Patel's Profile Picture",
+        },
       },
     },
   };
