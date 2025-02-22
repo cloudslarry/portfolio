@@ -1,6 +1,6 @@
 const baseURL = "demo.magic-portfolio.com";
 
-const routes = {
+const routes = { 
   "/": true,
   "/about": true,
   "/work": true,
