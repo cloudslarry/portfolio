@@ -15,36 +15,27 @@ import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 export async function generateMetadata() {
   return {
     metadataBase: new URL(`https://${baseURL}`),
-    title: home.title,
-    description: home.description,
+    title: "Dev Patel's Portfolio",
+    description: "Portfolio website showcasing my work as a PYTHON DEVELOPER/AI ML DEVELOPER",
     openGraph: {
-      title: `${person.firstName}'s Portfolio`,
-      description: "Portfolio website showcasing my work.",
-      url: baseURL,
-      siteName: `${person.firstName}'s Portfolio`,
+      title: "Dev Patel's Portfolio",
+      description: "Portfolio website showcasing my work as a PYTHON DEVELOPER/AI ML DEVELOPER",
+      url: `https://${baseURL}`,
+      siteName: "Dev Patel's Portfolio",
       locale: "en_US",
       type: "website",
-      
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-       images: [
+      images: [
         {
-          URL: "/images/avatar2.png", // Change to your hosted image URL
+          URL: "/images/avatar2.png",  // Use local path from public folder
           width: 1200,
           height: 630,
           alt: "Dev Patel's Profile Picture",
         },
-      },
+      ],
     },
   };
 }
+
 
 const primary = Inter({
   variable: "--font-primary",
